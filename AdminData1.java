@@ -1,49 +1,50 @@
+package practice_9_19;
 import java.util.Scanner;
 
 public class AdminData {
 	//int[] array= new int[10];
 	
-	//ÏÔÊ¾ÌáÊ¾ĞÅÏ¢µÄ·½·¨
+	//æ˜¾ç¤ºæç¤ºä¿¡æ¯çš„æ–¹æ³•
 	public void notice(){
 	System.out.println();
 	System.out.println("**************************");
-	System.out.println("         1--²åÈëÊı¾İ");
-	System.out.println("         2--ÏÔÊ¾ËùÓĞÊı¾İ");
-	System.out.println("         3--ÔÚÖ¸¶¨Î»ÖÃ´¦²åÈëÊı¾İ");
-	System.out.println("         4--²éÑ¯ÄÜ±»3Õû³ıµÄÊı¾İ");
-	System.out.println("         0--ÍË³ö");
+	System.out.println("         1--æ’å…¥æ•°æ®");
+	System.out.println("         2--æ˜¾ç¤ºæ‰€æœ‰æ•°æ®");
+	System.out.println("         3--åœ¨æŒ‡å®šä½ç½®å¤„æ’å…¥æ•°æ®");
+	System.out.println("         4--æŸ¥è¯¢èƒ½è¢«3æ•´é™¤çš„æ•°æ®");
+	System.out.println("         0--é€€å‡º");
 	System.out.println("**************************");
-	System.out.println("ÇëÊäÈë¶ÔÓ¦µÄÊı×Ö½øĞĞ²Ù×÷£º");
+	System.out.println("è¯·è¾“å…¥å¯¹åº”çš„æ•°å­—è¿›è¡Œæ“ä½œï¼š");
 	}
 	
-	//²åÈëÊı¾İ
+	//æ’å…¥æ•°æ®
 	public int[] insertData(int[] array){
 		Scanner sc=new Scanner(System.in);
 		for(int i=0;i<9;i++)
 		{
-			System.out.println("ÇëÊäÈëµÚ"+(i+1)+"¸öÊı¾İ£º");
+			System.out.println("è¯·è¾“å…¥ç¬¬"+(i+1)+"ä¸ªæ•°æ®ï¼š");
 			array[i]=sc.nextInt();
 		}
-		System.out.println("Êı×éÔªËØÎª:");
+		System.out.println("æ•°ç»„å…ƒç´ ä¸º:");
 		for(int i=0;i<9;i++)
 			System.out.print(array[i]+" ");
 		return array;
 	}
 	
-	//ÏÔÊ¾ËùÓĞÊı¾İ
+	//æ˜¾ç¤ºæ‰€æœ‰æ•°æ®
 	public void showData(int[] a,int length){
 		for(int i=0;i<length;i++)
 			System.out.print(a[i]+" ");
 	}
 	
-	//ÔÚÖ¸¶¨Î»ÖÃ´¦²åÈëÊı¾İ
+	//åœ¨æŒ‡å®šä½ç½®å¤„æ’å…¥æ•°æ®
 	public void insertAtArray(int[] array,int n,int k){
 		array[k-1]=n;
 		for(int i=0;i<array.length;i++)
 			System.out.print(array[i]+" ");
 	}
 	
-	//²éÑ¯ÄÜ±»3Õû³ıµÄÊı¾İ
+	//æŸ¥è¯¢èƒ½è¢«3æ•´é™¤çš„æ•°æ®
 	public void divThree(int[] a){
 		for(int i=0;i<a.length;i++)
 		{
@@ -64,7 +65,7 @@ public class AdminData {
 		ad.notice();
 		c=sc.nextInt();
 		if(c==0){
-			System.out.print("ÍË³ö³ÌĞò! ");
+			System.out.print("é€€å‡ºç¨‹åº! ");
 			
 			break;
 		}
@@ -76,9 +77,9 @@ public class AdminData {
 
 		}
 		if(c==3){
-			System.out.print("ÇëÊäÈëÒª²åÈëµÄÊı¾İ£º");
+			System.out.print("è¯·è¾“å…¥è¦æ’å…¥çš„æ•°æ®ï¼š");
 			int n= sc.nextInt();
-			System.out.print("ÇëÊäÈëÒª²åÈëµÄÎ»ÖÃ£º");
+			System.out.print("è¯·è¾“å…¥è¦æ’å…¥çš„ä½ç½®ï¼š");
 			int k= sc.nextInt();
 			ad.insertAtArray(array, n, k);
 		}
