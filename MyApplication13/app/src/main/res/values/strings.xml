@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="left01">此处为图书封面</string>
+    <string name="left02">书名</string>
+
+    <string name="right01">概述</string>
+    <string name="right02">作者</string>
+    <string name="right03">日期</string>
+</resources>
